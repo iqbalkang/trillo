@@ -433,6 +433,9 @@
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-weight: 300;
+    @media screen and (max-width: $smallest) {
+      font-size: 1.1rem;
+    }
   }
 
   &__btn {

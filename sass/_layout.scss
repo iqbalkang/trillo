@@ -17,6 +17,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: $phone) {
+    align-content: space-evenly;
+    height: 10rem;
+  }
 }
 
 .content {

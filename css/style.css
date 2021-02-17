@@ -340,6 +340,9 @@ a {
     text-transform: uppercase;
     margin-bottom: 2rem;
     font-weight: 300; }
+    @media screen and (max-width: 26.25em) {
+      .cta__heading {
+        font-size: 1.1rem; } }
   .cta__btn {
     width: 20rem;
     height: 5rem;
@@ -419,6 +422,10 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center; }
+  @media screen and (max-width: 37.5em) {
+    .header {
+      align-content: space-evenly;
+      height: 10rem; } }
 
 .content {
   display: flex; }
