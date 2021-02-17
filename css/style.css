@@ -68,6 +68,10 @@ a {
     width: 2rem;
     margin-left: -3rem;
     fill: var(--clr-grey-dark-2); }
+  @media screen and (max-width: 31.25em) {
+    .search {
+      order: 1;
+      flex: 1 0 80%; } }
 
 .user-nav {
   align-self: stretch;
@@ -114,6 +118,10 @@ a {
 @media screen and (max-width: 56.25em) {
   .side-nav__item {
     flex: 1; } }
+
+@media screen and (max-width: 31.25em) {
+  .side-nav__item {
+    flex: 1 0 50%; } }
 
 .side-nav__link {
   color: var(--clr-grey-light-1);
@@ -192,6 +200,10 @@ a {
       .overview__heading {
         font-size: 1.75rem;
         padding: 1.5rem; } }
+    @media screen and (max-width: 26.25em) {
+      .overview__heading {
+        font-size: 1.25rem;
+        padding: 1rem; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -199,6 +211,10 @@ a {
     height: 1.75rem;
     width: 1.75rem;
     fill: var(--clr-primary); }
+    @media screen and (max-width: 26.25em) {
+      .overview__icon-star, .overview__icon-location {
+        height: 1rem;
+        width: 1rem; } }
   .overview__location {
     margin-right: 2rem;
     display: flex; }
@@ -222,8 +238,14 @@ a {
     @media screen and (max-width: 31.25em) {
       .overview__average {
         font-size: 1.75rem; } }
+    @media screen and (max-width: 26.25em) {
+      .overview__average {
+        font-size: 1.25rem; } }
   .overview__votes {
     font-size: 0.8rem; }
+    @media screen and (max-width: 26.25em) {
+      .overview__votes {
+        font-size: 0.5rem; } }
 
 .description__paragraph:not(:last-of-type) {
   margin-bottom: 2rem; }
@@ -367,6 +389,9 @@ a {
     transition: margin-left 0.2s; }
   .btn-inline:hover span {
     margin-left: 0.5rem; }
+  @media screen and (max-width: 26.25em) {
+    .btn-inline {
+      font-size: 1.25rem; } }
 
 @keyframes pulse {
   0% {
@@ -391,6 +416,7 @@ a {
   height: 7rem;
   background-color: var(--clr-grey-light-1);
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center; }
 
