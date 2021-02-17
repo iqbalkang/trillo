@@ -6,6 +6,7 @@
 
   @media screen and (max-width: $tab-land) {
     margin: 0;
+    max-width: 100%;
   }
 }
 
@@ -32,6 +33,10 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem 0;
+
+  @media screen and (max-width: $tab-port) {
+    padding: 0;
+  }
 }
 
 .hotel-main {
@@ -43,7 +48,9 @@
   background-color: var(--clr-grey-light-1);
   display: flex;
   padding: 4rem;
-  // background: chartreuse;
+  @media screen and (max-width: $middle) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -52,8 +59,19 @@
   margin-right: 4rem;
   padding: 3rem;
   box-shadow: var(--shadow-dark);
+
+  @media screen and (max-width: $middle) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 .user-reviews {
   flex: 1;
+
+  @media screen and (max-width: $middle) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

@@ -21,11 +21,13 @@
 
 html {
   font-size: 62.5%; }
+  @media screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   background: linear-gradient(to bottom right, var(--clr-primary-light), var(--clr-primary-dark));
   color: var(--clr-grey-dark-3);
-  min-height: 100vh;
   font-size: 1.4rem;
   font-family: 'open-sans', sans-serif;
   line-height: 1.6; }
@@ -104,6 +106,15 @@ a {
   .user-nav__user-name {
     text-transform: capitalize; }
 
+@media screen and (max-width: 56.25em) {
+  .side-nav {
+    display: flex;
+    flex-wrap: wrap; } }
+
+@media screen and (max-width: 56.25em) {
+  .side-nav__item {
+    flex: 1; } }
+
 .side-nav__link {
   color: var(--clr-grey-light-1);
   text-transform: uppercase;
@@ -115,6 +126,12 @@ a {
   align-items: center;
   position: relative;
   z-index: 1; }
+  @media screen and (max-width: 56.25em) {
+    .side-nav__link {
+      justify-content: center; } }
+  @media screen and (max-width: 37.5em) {
+    .side-nav__link {
+      flex-direction: column; } }
   .side-nav__link:active::before {
     background-color: var(--clr-primary-light); }
   .side-nav__link::before {
@@ -132,17 +149,29 @@ a {
   .side-nav__link:hover::before, .side-nav__link--active::before {
     transform: scaleY(1);
     width: 100%; }
+  @media screen and (max-width: 56.25em) {
+    .side-nav__link {
+      margin-top: 0; } }
 
 .side-nav__icon {
   height: 1.75rem;
   width: 1.75rem;
   fill: var(--clr-white);
   margin-right: 2rem; }
+  @media screen and (max-width: 37.5em) {
+    .side-nav__icon {
+      margin-right: 0;
+      height: 1.5rem;
+      width: 1.5rem;
+      margin-bottom: 0.5rem; } }
 
 .copyrights {
   padding: 0 2rem; }
   .copyrights__text {
     color: var(--clr-grey-light-1); }
+  @media screen and (max-width: 56.25em) {
+    .copyrights {
+      display: none; } }
 
 .gallery {
   display: flex; }
@@ -159,6 +188,10 @@ a {
     font-size: 2.25rem;
     padding: 1.5rem 1rem 1.5rem 3rem;
     letter-spacing: 0.1rem; }
+    @media screen and (max-width: 31.25em) {
+      .overview__heading {
+        font-size: 1.75rem;
+        padding: 1.5rem; } }
   .overview__stars {
     margin-right: auto;
     display: flex; }
@@ -179,10 +212,16 @@ a {
     display: flex;
     align-items: center;
     text-align: center; }
+    @media screen and (max-width: 31.25em) {
+      .overview__rating {
+        padding: 0 1rem; } }
   .overview__average {
     display: block;
     text-align: center;
     font-size: 3rem; }
+    @media screen and (max-width: 31.25em) {
+      .overview__average {
+        font-size: 1.75rem; } }
   .overview__votes {
     font-size: 0.8rem; }
 
@@ -258,6 +297,17 @@ a {
     color: var(--clr-primary); }
   .review-btn {
     text-align: center; }
+  @media screen and (max-width: 46.9em) {
+    .review {
+      flex: 1 0 calc(50% - 2rem); }
+      .review:first-child {
+        margin-right: 2rem; } }
+  @media screen and (max-width: 31.25em) {
+    .review {
+      flex: 1 0 100%;
+      margin-bottom: 2rem; }
+      .review:first-child {
+        margin-right: 0rem; } }
 
 .cta {
   padding: 3rem;
@@ -334,7 +384,8 @@ a {
   min-height: 50rem; }
   @media screen and (max-width: 75em) {
     .container {
-      margin: 0; } }
+      margin: 0;
+      max-width: 100%; } }
 
 .header {
   height: 7rem;
@@ -356,6 +407,9 @@ a {
   flex-direction: column;
   justify-content: space-between;
   padding: 2rem 0; }
+  @media screen and (max-width: 56.25em) {
+    .sidebar {
+      padding: 0; } }
 
 .hotel-main {
   flex: 1;
@@ -365,6 +419,9 @@ a {
   background-color: var(--clr-grey-light-1);
   display: flex;
   padding: 4rem; }
+  @media screen and (max-width: 46.9em) {
+    .details {
+      flex-direction: column; } }
 
 .description {
   background-color: var(--clr-white);
@@ -372,6 +429,15 @@ a {
   margin-right: 4rem;
   padding: 3rem;
   box-shadow: var(--shadow-dark); }
+  @media screen and (max-width: 46.9em) {
+    .description {
+      margin-right: 0;
+      margin-bottom: 2rem; } }
 
 .user-reviews {
   flex: 1; }
+  @media screen and (max-width: 46.9em) {
+    .user-reviews {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; } }

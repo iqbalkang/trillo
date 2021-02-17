@@ -20,6 +20,9 @@
 $tab-land: 75em;
 $tab-port: 56.25em;
 $phone: 37.5em;
+$large: 68.75em;
+$middle: 46.9em;
+$small: 31.25em;
 
 *,
 ::before,
@@ -31,6 +34,10 @@ $phone: 37.5em;
 
 html {
   font-size: 62.5%;
+
+  @media screen and (max-width: $large) {
+    font-size: 50%;
+  }
 }
 
 body {
@@ -40,7 +47,6 @@ body {
     var(--clr-primary-dark)
   );
   color: var(--clr-grey-dark-3);
-  min-height: 100vh;
   font-size: 1.4rem;
   font-family: 'open-sans', sans-serif;
   line-height: 1.6;
